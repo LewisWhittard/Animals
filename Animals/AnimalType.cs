@@ -1,6 +1,6 @@
 ﻿namespace Animals
 {
-    internal enum AnimalType
+    public enum AnimalType
     {
         Fish,
         Amphibian,
