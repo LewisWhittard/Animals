@@ -6,20 +6,24 @@ namespace Animals
     {
         protected AnimalType _animalType;
 
-        
 
-        AnimalType IAnimal.animalType
+
+
+        AnimalType IAnimal.AnimalType
         {
             get { return _animalType; }
+            set { _animalType = value; }
         }
 
-        protected AnimalType
     }
 
     internal abstract class AnimalBasePlus : AnimalBase
     {
 
 
-        public AnimalType GetAnimalType() { return ((IAnimal)this).animalType; }
+        AnimalType GetAnimalType() { return ((IAnimal)this).AnimalType; }
+        // Method to set animal type
+        public void SetAnimalType(AnimalType animalType) { ((IAnimal)this).AnimalType = animalType;
+        }
     }
 }

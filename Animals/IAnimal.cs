@@ -2,6 +2,6 @@
 {
     public interface IAnimal
     {
-        public AnimalType AnimalType { get; }
+        public AnimalType AnimalType { get; set; }
     }
 }
