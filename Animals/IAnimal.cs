@@ -1,7 +1,7 @@
 ﻿namespace Animals
 {
-    internal interface IAnimal
+    public interface IAnimal
     {
-        internal AnimalType AnimalType { get; }
+        public AnimalType animalType { get; }
     }
 }
